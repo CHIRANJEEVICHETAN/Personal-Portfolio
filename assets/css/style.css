@@ -513,6 +513,11 @@ footer {
 }
 .middle-footer .footer-menu {
   display: flex;
+  flex-wrap: wrap;
+  /* flex-direction: column; */
+  justify-content: space-around;
+  /* overflow-wrap: break-word; */
+  /* overflow: hidden; */
 }
 .footer_menu_list {
   list-style: none;
@@ -645,7 +650,8 @@ footer {
 .project-container {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: space-evenly;
+  /* background-color: #d50000; */
   gap: 20px;
 }
 .project-box {
@@ -654,7 +660,8 @@ footer {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  width: 30%;
+  flex-wrap: wrap;
+  width: 350px;
   height: 250px;
   background: var(--color-white);
   border-radius: 20px;
@@ -687,6 +694,12 @@ footer {
   flex-direction: column;
   gap: 20px;
 }
+/* .education-container h3 > span {
+  display: flex;
+  justify-content: flex-end;
+  align-self: center;
+} */
+
 .education-item {
   background: var(--color-white);
   box-shadow: 1px 8px 10px 2px var(--first-shadow-color);
@@ -701,6 +714,10 @@ footer {
   font-size: 16px;
   color: #777;
   margin: 5px 0;
+}
+.education-item span {
+  font-size: 15px;
+  float: right;
 }
 
 /* ----- CERTIFICATES SECTION ----- */
