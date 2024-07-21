@@ -694,11 +694,6 @@ footer {
   flex-direction: column;
   gap: 20px;
 }
-/* .education-container h3 > span {
-  display: flex;
-  justify-content: flex-end;
-  align-self: center;
-} */
 
 .education-item {
   background: var(--color-white);
